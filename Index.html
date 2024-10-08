@@ -17,13 +17,54 @@
             color: white;
             padding: 10px 0;
             text-align: center;
+            border-radius: 8px;
         }
         article {
             background: white;
-            padding: 20px;
+            padding: 15px;
             margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        /* HTML練習2的样式 */
+        .info-table th {
+            background-color: #ff9800; /* 橙色背景 */
+            color: white;
+        }
+        .info-table td {
+            background-color: #ffe0b2; /* 浅橙色背景 */
         }
         footer {
             text-align: center;
@@ -35,14 +76,86 @@
 </head>
 <body>
     <header>
-        <h1>3</h1>
+        <h1>HTML練習</h1>
     </header>
     <article>
         <h2>自我介紹</h2>
         <p>大家好，我是來自<a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B">中華民國</a>，我是一位<b>可憐大學生</b>。</p>
-        <p>這是我的學校</p>
-        <a href="https://www.lhu.edu.tw/"><img src="1.jfif"/></a>
+        <p>這是我的學校：</p>
+        <a href="https://www.lhu.edu.tw/">
+            <img src="C:\wamp64\www\D1114182007\image/1.jfif" alt="我的學校的圖片" style="max-width: 100%; height: auto; border-radius: 8px;"/>
+        </a>
     </article>
+
+    <article>
+        <h2>做過的工作</h2>
+        <table>
+            <tr>
+                <th rowspan="4" style="width: 15%;">工作經歷</th>
+                <th>時間</th>
+                <th>職位</th>
+                <th>月薪</th>
+            </tr>
+            <tr>
+                <td>國中</td>
+                <td>補習班助教</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>高中</td>
+                <td>加油站員工</td>
+                <td>16000</td>
+            </tr>
+            <tr>
+                <td>大學</td>
+                <td>ubike作業員</td>
+                <td>28000</td>
+            </tr>
+        </table>
+
+        <h2>HTML練習2</h2>
+
+        <table class="info-table">
+            <tr>
+                <th>班級:</th>
+                <td style="color: red;">請填上您的資料</td>
+                <td>姓名:</td>
+                <td style="color: red;">請填上您的資料</td>
+            </tr>
+            <tr>
+                <th>學號:</th>
+                <td style="color: red;">請填上您的資料</td>
+                <td>導師:</td>
+                <td style="color: red;">請填上您的資料</td>
+            </tr>
+            <tr>
+                <th>假別:</th>
+                <td colspan="3">事假</td>
+            </tr>
+            <tr>
+                <th>請假事由:</th>
+                <td colspan="3">考駕照</td>
+            </tr>
+            <tr>
+                <th>請假日期:</th>
+                <td colspan="3" rowspan="2">2024/09/26 第1節起至 2024/09/26 第1截止<br/>1天1節 </td>
+            </tr>
+            <tr>
+                <th>請假天數:</th>
+            </tr>
+            <tr>
+                <th>節次明細:</th>
+                <td colspan="3">2024/9/26(四):1</td>
+            </tr>
+            <tr>
+                <th>核准情形:</th>
+                <td> </td>
+                <td>最後編輯:</td>
+                <td> </td>
+            </tr>
+        </table>
+    </article>
+    
     <footer>
         <p>© 2024 456</p>
     </footer>
